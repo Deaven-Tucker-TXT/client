@@ -53,7 +53,7 @@ export default function Edit() {
    };
  
    // This will send a post request to update the data in the database.
-   await fetch(`https://dtmernserver.herokuapp.com//update/${params.id}`, {
+   await fetch(`https://dtmernserver.herokuapp.com/update//${params.id}`, {
      method: "POST",
      body: JSON.stringify(editedPerson),
      headers: {
@@ -80,7 +80,7 @@ export default function Edit() {
          />
        </div>
        <div className="form-group">
-         <label htmlFor="position">Position: </label>
+         <label htmlFor="position">Post Content: </label>
          <input
            type="text"
            className="form-control"
