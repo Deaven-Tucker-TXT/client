@@ -11,7 +11,3 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById("root")
 );
-
-app.get('/', (req, res) => {
-  res.json({ greeting: "Hello World!"})
-})
